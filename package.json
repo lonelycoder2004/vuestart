@@ -2,7 +2,7 @@
   "name": "corrridor",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Anoop P Oommen <aronstone.stone@gmail.com>",
+  "author": "Allen Shaji <allenshaji10@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
