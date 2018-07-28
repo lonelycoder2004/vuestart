@@ -6,7 +6,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label>Email ID:</label>
-            <input type="text" class="form-control" v-model="reg.email"/>
+            <input type="text" class="form-control" v-model="email"/>
           </div>
         </div>
         </div>
@@ -14,7 +14,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Password</label>
-              <input typ="text" class="form-control" v-model="reg.description"></textarea>
+              <input typ="text" class="form-control" v-model="description"/>
             </div>
           </div>
         </div><br />
@@ -28,15 +28,15 @@
 export default {
     data(){
         return {
-          reg: {}
+          email : "",
+          password : ""
         }
     },
    methods: {
        addTicket() {
-             let uri = 'http://localhost:4000/tickets/add';
-            this.axios.post(uri, this.reg).then((response) => {
-               console.log(response);
-            });
+             axios.post('https://site.com/', {
+             foo: 'bar'
+              });
        }
     }
 }

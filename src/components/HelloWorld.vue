@@ -12,7 +12,7 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Register Now</a>
+        <a class="nav-link" href="display">Display</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="login">Register Now</a>
