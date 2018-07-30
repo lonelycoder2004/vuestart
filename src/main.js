@@ -11,7 +11,9 @@ import "bootstrap-vue/dist/bootstrap-vue.css"
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
-Vue.use(VueAxios, axios)
+window.axios = require('axios');
+/*window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
+Vue.prototype.$http = window.axios*/
 
 /* eslint-disable no-new */
 new Vue({

@@ -14,7 +14,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Password</label>
-              <input typ="text" class="form-control" v-model="description"/>
+              <input typ="text" class="form-control" v-model="password"/>
             </div>
           </div>
         </div><br />
@@ -34,9 +34,16 @@ export default {
     },
    methods: {
        addTicket() {
-             axios.post('https://site.com/', {
-             foo: 'bar'
-              });
+             axios.post('/user', {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
        }
     }
 }
